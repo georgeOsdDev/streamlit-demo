@@ -78,4 +78,6 @@ jobs:
         with:
           app-name: '2504100030006950-app'
           slot-name: 'Production'
-          startup-command: 'streamlit run app.py --server.address=0.0.0.0 --server.port=8000'
+          clean: true
+          # startup-command: 'streamlit run app.py --server.address=0.0.0.0 --server.port=8000'
+          startup-command: 'streamlit run SubDir/app.py --server.address=0.0.0.0 --server.port=8000'
